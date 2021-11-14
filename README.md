@@ -4,7 +4,6 @@ vim setting
 ```bash
 cd ~ &&\
 git clone https://github.com/PoKeumCho/vim.git &&\
-cd vim &&\
 mv vim/.vimrc . &&\
 rm -rf vim
 ```
