@@ -24,6 +24,9 @@ set incsearch " 단어 검색시 글자 입력할 때마다 검색
 "===================================================================================================="
 
 " swap file 저장 경로를 지정한다.
+if !isdirectory(expand("$HOME/.vim/swap"))
+    call mkdir(expand("$HOME/.vim/swap"), "p")
+endif
 set directory=$HOME/.vim/swap
 
 " 되돌리기 상태를 저장해서 영구적으로 사용할 수 있도록 한다.
